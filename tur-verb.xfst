@@ -25,21 +25,21 @@ define DRule        D -> t || %-VOICE "^" _ ,, D -> d || \%-VOICE "^" _ ;
 
 ! To handle double vowel conflict such as geldiyse(ı)nız, görülm(e)üyor etc.
 
-define VReduction   H -> 0 || [m|d] _ "^" H , s [e|a] "^" _ ,,
-                    [a|e] -> 0 || m _ "^" H ; 
+define VReduction   	H -> 0 || [m|d] _ "^" H , s [e|a] "^" _ ,,
+                    	[a|e] -> 0 || m _ "^" H ; 
 
 
 ! To handle Vowel Harmony.
 
 define HRule  		H -> %+HIGH & %+ROUND & %+BACK || [%+BACK & %+ROUND] \V* _ ,,
-         			H -> %+HIGH & %+ROUND & %-BACK || [%-BACK & %+ROUND] \V* _ ,,
-          			H -> %+HIGH & %-ROUND & %+BACK || [%+BACK & %-ROUND] \V* _ ,,
-          			H -> %+HIGH & %-ROUND & %-BACK || [%-BACK & %-ROUND] \V* _ ;
+         		H -> %+HIGH & %+ROUND & %-BACK || [%-BACK & %+ROUND] \V* _ ,,
+          		H -> %+HIGH & %-ROUND & %+BACK || [%+BACK & %-ROUND] \V* _ ,,
+          		H -> %+HIGH & %-ROUND & %-BACK || [%-BACK & %-ROUND] \V* _ ;
 
 ! To handle e/a variation.
 
-define ARule  	A -> %-HIGH & %-ROUND & %+BACK || %+BACK \V* _ ,,
-				A -> %-HIGH & %-ROUND & %-BACK || %-BACK \V* _ ;
+define ARule  		A -> %-HIGH & %-ROUND & %+BACK || %+BACK \V* _ ,,
+			A -> %-HIGH & %-ROUND & %-BACK || %-BACK \V* _ ;
 
 ! To handle ı/i variation.
 
