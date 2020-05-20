@@ -1,0 +1,79 @@
+clear
+
+define C  b|c|ç|d|f|g|ğ|h|j|k|l|m|n|p|r|s|ş|t|v|y|z;
+
+define V  a|e|i|o|u|ü|ö|ı;
+
+define VAbs H|I|A;
+
+define CAbs S|D|Y;
+
+define +HIGH i|u|ı|ü; 
+define -HIGH e|a|o|ö;
+define +LOW a|ö;
+define -LOW e|i|ı|o|u|ü;
+define +BACK ı|a|o|u;
+define -BACK i|e|ö|ü;
+define +ROUND ö|ü|o|u;
+define -ROUND e|a|i|ı;
+
+define -VOICE p|ç|t|k|f|s|ş|h;
+
+! To handle t/d variation.
+
+define DRule        D -> t || %-VOICE "^" _ ,, D -> d || \%-VOICE "^" _ ;
+
+! To handle double vowel conflict such as geldiyse(ı)nız, görülm(e)üyor etc.
+
+define VReduction   H -> 0 || [m|d] _ "^" H , s [e|a] "^" _ ,,
+                    [a|e] -> 0 || m _ "^" H ; 
+
+
+! To handle Vowel Harmony.
+
+define HRule  		H -> %+HIGH & %+ROUND & %+BACK || [%+BACK & %+ROUND] \V* _ ,,
+         			H -> %+HIGH & %+ROUND & %-BACK || [%-BACK & %+ROUND] \V* _ ,,
+          			H -> %+HIGH & %-ROUND & %+BACK || [%+BACK & %-ROUND] \V* _ ,,
+          			H -> %+HIGH & %-ROUND & %-BACK || [%-BACK & %-ROUND] \V* _ ;
+
+! To handle e/a variation.
+
+define ARule  	A -> %-HIGH & %-ROUND & %+BACK || %+BACK \V* _ ,,
+				A -> %-HIGH & %-ROUND & %-BACK || %-BACK \V* _ ;
+
+! To handle ı/i variation.
+
+define IRule    I -> ı || a \V* _ ,, I -> i || e \V* _ ;
+
+! To handle "s" in kaçtıysa(s)ınız, yap(s)ınlar.
+
+define SRule    S -> 0 || H "^" _ ,, S -> s || \H "^" _ ;
+
+! To handle Y in ağlaYınız or yapsaYdın etc.
+    
+define YRule    Y -> y || V "^" _ V ,, Y -> 0 || C "^" _ ;
+
+! To handle Consonant Change.
+
+define ConsChange   k -> ğ || _ "^" V ;
+
+! To eliminate negative aorist gelme(z)m conflict.
+
+define Zclear   Z -> 0 || _ "^" [m|y] ,, Z -> z || _ "^" \[m|y] ; 
+
+! Clear out the "^" symbols.
+
+define Cleanup "^" -> 0;
+
+push Cleanup
+push Zclear
+push ConsChange
+push HRule
+push VReduction
+push YRule
+push SRule
+push DRule
+push IRule
+push ARule
+read lexc tur-verb.lexc
+compose net

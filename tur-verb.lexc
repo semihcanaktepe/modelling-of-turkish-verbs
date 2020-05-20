@@ -1,0 +1,165 @@
+Multichar_Symbols
++V
++Active
++Passive
++Base
++Positive
++Negative
++Aorist
++Past
++PastP
++Future
++Continuous
++Must
++Desire
++Condition
++Possibility
++Imperative
++1person
++2person
++3person
++1personPl
++2personPl
++3personPl
+
+LEXICON Root
+
+Verb;
+
+LEXICON Verb
+
+gel     VPos;
+git     VPos;
+öl      VPos;
+süz     VPos;
+ulu     VPos;
+gör     VPos;
+ağla    VPos;
+kaç     VPos;
+sat     VPos;
+yap     Vpos;
+
+LEXICON VPos
+
++V:0    Voice;
+
+LEXICON Voice
+
++Active:0       Negation;
++Passive:^Hl    Negation;
++Base:^mAk      #;
+
+LEXICON Negation
+
++Positive:0            TensePos;
++Negative:^mA          TenseNeg;
+
+LEXICON TensePos
+
++Aorist:^Hr         Person;
++Past:^DH           PersonPast;
++PastP:^mHş         Person;
++Future:^YAcAk      Person;
++Continuous:^Hyor   Person;
++Must:^mAlI         Person;
++Desire:^YA         PersonPast;
++Condition:^sA      PersonPast;
++Imperative:0       PersonImp;
+
+LEXICON TensePos
+
++Aorist:^Hr         ComTense1;
++PastP:^mHş         ComTense1;
++Future:^YAcAk      ComTense1;
++Continuous:^Hyor   ComTense1; 
++Must:^mAlIy        ComTense1;
++Past:^DHy          ComTense2;
++Condition:^sAy     ComTense3;
++Possibility:^YAbil ComTense4;
+
+LEXICON TenseNeg
+
++Aorist:^Z          PersonAor;
++Past:^DH           PersonPast;
++PastP:^mHş         Person;
++Future:^YAcAk      Person;
++Continuous:^Hyor   Person;
++Must:^mAlI         Person;
++Desire:^YA         PersonPast;
++Condition:^sA      PersonPast;
++Imperative:0       PersonImp;
+
+LEXICON TenseNeg
+
++Aorist:^Z          ComTense1;
++PastP:^mHş         ComTense1;
++Future:^YAcAk      ComTense1;
++Continuous:^Hyor   ComTense1; 
++Must:^mAlIy        ComTense1;
++Past:^DHy          ComTense2;
++Condition:^sAy     ComTense3;
++Possibility:^YAbil ComTense4;
+
+LEXICON ComTense1
+
++Past:^DH       PersonPast;
++PastP:^mHş     Person;
++Condition:^sA  Person;
+
+LEXICON ComTense2
+
++Past:^DH       PersonPast;
++Condition:^sA  Person;
+
+LEXICON ComTense3
+
++Past:^DH       PersonPast;
++PastP:^mHş     Person;
+
+LEXICON ComTense4
+
++Aorist:^Hr         Person;
++Past:^DH           PersonPast;
++PastP:^mHş         Person;
++Future:^AcAk       Person;
++Continuous:^Hyor   Person;
++Must:^mAlI         Person;
++Condition:^sA      PersonPast;
+
+LEXICON Person
+
++1person:^Hm         #;
++2person:^SHn        #;
++3person:0           #;
++1personPl:^YHz      #;
++2personPl:^SHnHz    #;
++3personPl:0         #;
++3personPl:^lAr      #;
+
+LEXICON PersonImp
+
++2person:0         #;
++2personPl:^YHn    #;
++2personPl:^YHnHz  #;
++3person:^sHn      #;
++3personPl:^sHnlAr #;
+
+LEXICON PersonAor
+
+1person:^m         #;     
+2person:^sIn       #;
+3person:0          #;
+1personPl:^yIz     #;
+2personPl:^sInIz   #;
+3personPl:0        #;
+3personPl:^ler     #;
+
+LEXICON PersonPast
+
++1person:^Hm         #;
++2person:^SHn        #;
++3person:0           #;
++1personPl:^YHk      #;
++2personPl:^SHnHz    #;
++3personPl:0         #;
++3personPl:^lAr      #;
