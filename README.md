@@ -77,6 +77,6 @@ define Cleanup		"^" -> 0;
 for more information.
 
 ## Testing the Model
-This model, as the mechanics of _Foma_ suggest, has two-way system, which consists of the surface form of the verbs _(up)_ and their underlying morphological structure _(down)_. The model can be test with the possible combinations. When the _up_ form of the verb is given, the _down_ form must be present or vice versa. To detect the possible problems, a down test is provided. 
+You can find the necessary files of the model under this repository. This model, as the mechanics of _Foma_ suggest, has two-way system, which consists of the surface form of the verbs _(up)_ and their underlying morphological structure _(down)_. The model can be test with the possible combinations. When the _up_ form of the verb is given, the _down_ form must be present or vice versa. To detect the possible problems, a down test is provided. 
 ### Further Development
 As you can see, when down test is applied, some of the forms are not realized properly. The possible reason is the morphology of Turkish is so complex that it always has unpredictable instances. Therefore, the rules and their application order cannot handle everything. However, these problems can be overcome with the future development of this system. You can contact me if you have any suggestions to develop this system, _[secanakt@gmail.com](secanakt@gmail.com)_.
