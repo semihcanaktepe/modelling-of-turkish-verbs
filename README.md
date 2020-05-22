@@ -71,7 +71,7 @@ ZClear: To eliminate negative aorist gelme(z)m conflict.
 define Zclear   Z -> 0 || _ "^" [m|y] ,, Z -> z || _ "^" \[m|y] ;
 
 Clearup: To get rid of the morpheme boundary symbols "^".
-define Cleanup "^" -> 0;
+define Cleanup		"^" -> 0;
 ```
 *Please refer to [Oflazer et al. (1994)](https://pdfs.semanticscholar.org/ec7f/c4cc14757addef6ba1cec3902bddb6e983a6.pdf)
 for more information.
