@@ -17,7 +17,7 @@ You (all) were not being seen.
 
 When designing this model, the order stated above is used, and the lexicons for each category are designed for the possible combinations. For example, When the verb is negated, the aorist tense suffix changes. Therefore, there are two different lexicons for positive and negative verbs. 
 ## Tense, Aspect and Mood
-In Turkish, the basic tense, aspect, mood suffixes are aorist _(-Hr or -Z)_, continuous _(-Hyor)_, present _(-mAktA)_, past _(DH)_, past perfect _(-mHş)_, future, _(-AcAk)_, must _(-mAlI)_, desire _(-YA)_, condition _(-sA)_, possibility/ability _(-Abil)_ and imperative _(0)_ suffixes. You may ask what the capital letters are. Obviously, there is no capital letter in the words; they are abstractions of the possible sounds varying accordingly _(These abstractions are explained in the following sections)_.  
+In Turkish, the basic tense, aspect, mood suffixes are aorist _(-Hr or -Z)_, continuous _(-Hyor)_, present _(-mAktA)_, past _(DH)_, past perfect _(-mHş)_, future, _(-AcAk)_, must _(-mAlI)_, desire _(-YA)_, condition _(-sA)_, possibility/ability _(-Abil)_ and imperative _(0)_ suffixes. You may ask what the capital letters are. Obviously, there is no capital letter in the words; they are abstractions of the possible sounds varying accordingly _(These abstractions are explained in the section, Phonological Changes in Turkish)_.  
 ### Compound Tenses
  Sometimes, the suffixes above can create compound tenses in certain combinations such as continuity in the past _(-Hyor-dH)_ and condition in the future _(-AcAk-sA)_. Not every suffix create such compound structures. Therefore, they are classified in four categories as to which suffixes can be attached to them. 
 ## Voice
@@ -39,6 +39,43 @@ The first class includes the generic person suffixes, second class is for aorist
 ## Negation
 Turkish verbs are simply negated by the use of _-mA_ suffix. It changes the realization of aorist tense.
 ## Phonological Changes in Turkish
-## Abstractions
+In Turkish, when some suffixes are attached to the words, they sometimes assimilate their sound structure, which creates phonological changes. As mentioned above, the ones subject to such changes are abstracted using capital letters. To realize these morphophonological changes, some set of rules must be defined according to Turkish phonology. Some of the rules are given below. _"^"_ marks the morpheme boundaries.
+
+```
+Vowel Harmony: To handle _H_ abstraction.
+define HRule  		H -> %+HIGH & %+ROUND & %+BACK || [%+BACK & %+ROUND] \V* _ ,,
+         			    H -> %+HIGH & %+ROUND & %-BACK || [%-BACK & %+ROUND] \V* _ ,,
+          		   	H -> %+HIGH & %-ROUND & %+BACK || [%+BACK & %-ROUND] \V* _ ,,
+          		   	H -> %+HIGH & %-ROUND & %-BACK || [%-BACK & %-ROUND] \V* _ ;
+
+ARule: To handle a/e variation.\
+define ARule  	A -> %-HIGH & %-ROUND & %+BACK || %+BACK \V* _ ,,
+			           	A -> %-HIGH & %-ROUND & %-BACK || %-BACK \V* _ ;
+
+DRule: To handle d/t variation, _D_ is assimilated after voiceless consonants.
+define DRule        D -> t || %-VOICE "^" _ ,, D -> d || \%-VOICE "^" _ ;
+
+IRule: To handle ı/i variation.
+define IRule    I -> ı || a \V* _ ,, I -> i || e \V* _ ;
+
+SRule: To reduce _S_ in some positions.
+define SRule    S -> 0 || H "^" _ ,, S -> s || \H "^" _ ;
+
+YRule: To handle Y in ağlaYınız or yapsaYdın etc.
+define YRule    Y -> y || V "^" _ [V|H] ,, Y -> 0 || C "^" _ ;
+
+Consonant Change: To handle consonant assimilation in some cases*. 
+define ConsChange   k -> ğ || _ "^" V ;
+
+ZClear: To eliminate negative aorist gelme(z)m conflict.
+define Zclear   Z -> 0 || _ "^" [m|y] ,, Z -> z || _ "^" \[m|y] ;
+
+Clearup: To get rid of the morpheme boundary symbols _"^"_.
+define Cleanup "^" -> 0;
+```
+*Please refer to [Oflazer et al. (1994)](https://pdfs.semanticscholar.org/ec7f/c4cc14757addef6ba1cec3902bddb6e983a6.pdf)
+for more information.
+
 ## Testing
+This model, as the mechanics of _Foma_ suggest, has two-way system, which consists of the surface form of the verbs _(up)_ and their underlying morphological structure _(down)_. The model can be test with the possible combinations. When the _up_ form of the verb is given, the _down_ form must be present or vice versa. To detect the possible problems, a down test is provided. 
 ## Further Development
