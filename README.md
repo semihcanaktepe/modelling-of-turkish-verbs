@@ -49,26 +49,26 @@ define HRule  		H -> %+HIGH & %+ROUND & %+BACK || [%+BACK & %+ROUND] \V* _ ,,
           		H -> %+HIGH & %-ROUND & %-BACK || [%-BACK & %-ROUND] \V* _ ;
 
 ARule: To handle a/e variation.
-define ARule  	A -> %-HIGH & %-ROUND & %+BACK || %+BACK \V* _ ,,
-		A -> %-HIGH & %-ROUND & %-BACK || %-BACK \V* _ ;
+define ARule  		A -> %-HIGH & %-ROUND & %+BACK || %+BACK \V* _ ,,
+			A -> %-HIGH & %-ROUND & %-BACK || %-BACK \V* _ ;
 
 DRule: To handle d/t variation, D is assimilated after voiceless consonants.
-define DRule        D -> t || %-VOICE "^" _ ,, D -> d || \%-VOICE "^" _ ;
+define DRule        	D -> t || %-VOICE "^" _ ,, D -> d || \%-VOICE "^" _ ;
 
 IRule: To handle ı/i variation.
-define IRule    I -> ı || a \V* _ ,, I -> i || e \V* _ ;
+define IRule    	I -> ı || a \V* _ ,, I -> i || e \V* _ ;
 
 SRule: To reduce S in some positions.
-define SRule    S -> 0 || H "^" _ ,, S -> s || \H "^" _ ;
+define SRule   		S -> 0 || H "^" _ ,, S -> s || \H "^" _ ;
 
 YRule: To handle Y in ağlaYınız or yapsaYdın etc.
-define YRule    Y -> y || V "^" _ [V|H] ,, Y -> 0 || C "^" _ ;
+define YRule    	Y -> y || V "^" _ [V|H] ,, Y -> 0 || C "^" _ ;
 
 Consonant Change: To handle consonant assimilation in some cases*. 
-define ConsChange   k -> ğ || _ "^" V ;
+define ConsChange   	k -> ğ || _ "^" V ;
 
 ZClear: To eliminate negative aorist gelme(z)m conflict.
-define Zclear   Z -> 0 || _ "^" [m|y] ,, Z -> z || _ "^" \[m|y] ;
+define Zclear   	Z -> 0 || _ "^" [m|y] ,, Z -> z || _ "^" \[m|y] ;
 
 Clearup: To get rid of the morpheme boundary symbols "^".
 define Cleanup		"^" -> 0;
