@@ -10,6 +10,7 @@ Multichar_Symbols
 +PastP
 +Future
 +Continuous
++Present
 +Must
 +Desire
 +Condition
@@ -101,6 +102,7 @@ LEXICON TensePos
 +PastP:^mHş         Person;
 +Future:^YAcAk      Person;
 +Continuous:^Hyor   Person;
++Present:^mAktAY	Person;
 +Must:^mAlI         Person;
 +Desire:^YA         PersonPast;
 +Condition:^sA      PersonPast;
@@ -111,7 +113,8 @@ LEXICON TensePos
 +Aorist:^Hr         ComTense1;
 +PastP:^mHş         ComTense1;
 +Future:^YAcAk      ComTense1;
-+Continuous:^Hyor   ComTense1; 
++Continuous:^Hyor   ComTense1;
++Present:^mAktAY	ComTense1;
 +Must:^mAlIy        ComTense1;
 +Past:^DHy          ComTense2;
 +Condition:^sAy     ComTense3;
@@ -124,6 +127,7 @@ LEXICON TenseNeg
 +PastP:^mHş         Person;
 +Future:^YAcAk      Person;
 +Continuous:^Hyor   Person;
++Present:^mAktAY	Person;
 +Must:^mAlI         Person;
 +Desire:^YA         PersonPast;
 +Condition:^sA      PersonPast;
@@ -134,7 +138,8 @@ LEXICON TenseNeg
 +Aorist:^Z          ComTense1;
 +PastP:^mHş         ComTense1;
 +Future:^YAcAk      ComTense1;
-+Continuous:^Hyor   ComTense1; 
++Continuous:^Hyor   ComTense1;
++Present:^mAktAY	ComTense1;
 +Must:^mAlIy        ComTense1;
 +Past:^DHy          ComTense2;
 +Condition:^sAy     ComTense3;
@@ -163,6 +168,7 @@ LEXICON ComTense4
 +PastP:^mHş         Person;
 +Future:^AcAk       Person;
 +Continuous:^Hyor   Person;
++Present:^mAktAY	Person;
 +Must:^mAlI         Person;
 +Condition:^sA      PersonPast;
 
