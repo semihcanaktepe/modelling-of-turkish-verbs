@@ -17,7 +17,7 @@ You (all) were not being seen.
 
 When designing this model, the order stated above is used, and the lexicons for each category are designed for the possible combinations. For example, When the verb is negated, the aorist tense suffix changes. Therefore, there are two different lexicons for positive and negative verbs. 
 ## Tense, Aspect and Mood
-In Turkish, the basic tense, aspect, mood suffixes are aorist _(-Hr or -Z)_, continuous _(-Hyor)_, present _(-mAktA)_, past _(-DH)_, past perfect _(-mHş)_, future, _(-AcAk)_, must _(-mAlI)_, desire _(-YA)_, condition _(-sA)_, possibility/ability _(-Abil)_ and imperative _(0)_ suffixes. You may ask what the capital letters are. Obviously, there is no capital letter in the words; they are abstractions of the possible sounds varying accordingly _(These abstractions are explained in the section, Phonological Changes in Turkish)_.  
+In Turkish, the basic tense, aspect, mood suffixes are aorist _(-Hr or -Z)_, continuous _(-Hyor_ or _-mAktA)_, past _(-DH)_, past perfect _(-mHş)_, future, _(-AcAk)_, must _(-mAlI)_, desire _(-YA)_, condition _(-sA)_, possibility/ability _(-Abil)_ and imperative _(0)_ suffixes. You may ask what the capital letters are. Obviously, there is no capital letter in the words; they are abstractions of the possible sounds varying accordingly _(These abstractions are explained in the section, Phonological Changes in Turkish)_.  
 ### Compound Tenses
  Sometimes, the suffixes above can create compound tenses in certain combinations such as continuity in the past _(-Hyor-dH)_ and condition in the future _(-AcAk-sA)_. Not every suffix create such compound structures. Therefore, they are classified in four categories as to which suffixes can be attached to them. 
 ## Voice
