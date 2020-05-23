@@ -10,7 +10,6 @@ Multichar_Symbols
 +PastP
 +Future
 +Continuous
-+Present
 +Must
 +Desire
 +Condition
@@ -97,53 +96,53 @@ LEXICON Negation
 
 LEXICON TensePos
 
-+Aorist:^Hr         Person;
-+Past:^DH           PersonPast;
-+PastP:^mHş         Person;
-+Future:^YAcAk      Person;
-+Continuous:^Hyor   Person;
-+Present:^mAktAY	Person;
-+Must:^mAlI         Person;
-+Desire:^YA         PersonPast;
-+Condition:^sA      PersonPast;
-+Imperative:0       PersonImp;
++Aorist:^Hr           Person;
++Past:^DH             PersonPast;
++PastP:^mHş           Person;
++Future:^YAcAk        Person;
++Continuous:^Hyor     Person;
++Continuous:^mAktAY	  Person;
++Must:^mAlI           Person;
++Desire:^YA           PersonPast;
++Condition:^sA        PersonPast;
++Imperative:0         PersonImp;
 
 LEXICON TensePos
 
-+Aorist:^Hr         ComTense1;
-+PastP:^mHş         ComTense1;
-+Future:^YAcAk      ComTense1;
-+Continuous:^Hyor   ComTense1;
-+Present:^mAktAY	ComTense1;
-+Must:^mAlIy        ComTense1;
-+Past:^DHy          ComTense2;
-+Condition:^sAy     ComTense3;
-+Possibility:^YAbil ComTense4;
++Aorist:^Hr           ComTense1;
++PastP:^mHş           ComTense1;
++Future:^YAcAk        ComTense1;
++Continuous:^Hyor     ComTense1;
++Continuous:^mAktAY	  ComTense1;
++Must:^mAlIy          ComTense1;
++Past:^DHy            ComTense2;
++Condition:^sAy       ComTense3;
++Possibility:^YAbil   ComTense4;
 
 LEXICON TenseNeg
 
-+Aorist:^Z          PersonAor;
-+Past:^DH           PersonPast;
-+PastP:^mHş         Person;
-+Future:^YAcAk      Person;
-+Continuous:^Hyor   Person;
-+Present:^mAktAY	Person;
-+Must:^mAlI         Person;
-+Desire:^YA         PersonPast;
-+Condition:^sA      PersonPast;
-+Imperative:0       PersonImp;
++Aorist:^Z            PersonAor;
++Past:^DH             PersonPast;
++PastP:^mHş           Person;
++Future:^YAcAk        Person;
++Continuous:^Hyor     Person;
++Continuous:^mAktAY	  Person;
++Must:^mAlI           Person;
++Desire:^YA           PersonPast;
++Condition:^sA        PersonPast;
++Imperative:0         PersonImp;
 
 LEXICON TenseNeg
 
-+Aorist:^Z          ComTense1;
-+PastP:^mHş         ComTense1;
-+Future:^YAcAk      ComTense1;
-+Continuous:^Hyor   ComTense1;
-+Present:^mAktAY	ComTense1;
-+Must:^mAlIy        ComTense1;
-+Past:^DHy          ComTense2;
-+Condition:^sAy     ComTense3;
-+Possibility:^YAbil ComTense4;
++Aorist:^Z            ComTense1;
++PastP:^mHş           ComTense1;
++Future:^YAcAk        ComTense1;
++Continuous:^Hyor     ComTense1;
++Continuous:^mAktAY	  ComTense1;
++Must:^mAlIy          ComTense1;
++Past:^DHy            ComTense2;
++Condition:^sAy       ComTense3;
++Possibility:^YAbil   ComTense4;
 
 LEXICON ComTense1
 
@@ -163,14 +162,14 @@ LEXICON ComTense3
 
 LEXICON ComTense4
 
-+Aorist:^Hr         Person;
-+Past:^DH           PersonPast;
-+PastP:^mHş         Person;
-+Future:^AcAk       Person;
-+Continuous:^Hyor   Person;
-+Present:^mAktAY	Person;
-+Must:^mAlI         Person;
-+Condition:^sA      PersonPast;
++Aorist:^Hr           Person;
++Past:^DH             PersonPast;
++PastP:^mHş           Person;
++Future:^AcAk         Person;
++Continuous:^Hyor     Person;
++Continuous:^mAktAY	  Person;
++Must:^mAlI           Person;
++Condition:^sA        PersonPast;
 
 LEXICON Person
 
