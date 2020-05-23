@@ -28,7 +28,7 @@ Person suffixes in Turkish vary according to the tense, aspect and mood suffixes
 First Class		Second Class		Third Class		Fourth Class
 
 1person:Hm		1person:m		1person:m		2person:0
-2person:SHn		2person:SIn		2person:Hm		2personPl:YHn
+2person:SHn		2person:SIn		2person:n		2personPl:YHn
 3person:0		3person:0		3person:0		2personPl:YHnHz
 1personPl:YHz		1personPl:Iz		1personPl:k		3person:sHn
 2personPl:SHnHz		2personPl:sInIz		2personPl:HnHz		3personPl:sHnlAr
