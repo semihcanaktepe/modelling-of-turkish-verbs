@@ -4,9 +4,9 @@ define C  b|c|ç|d|f|g|ğ|h|j|k|l|m|n|p|r|s|ş|t|v|y|z;
 
 define V  a|e|i|o|u|ü|ö|ı;
 
-define VAbs H|I|A|Z;
+define VAbs H|I|A;
 
-define CAbs S|D|Y;
+define CAbs S|D|Y|Z;
 
 define +HIGH i|u|ı|ü; 
 define -HIGH e|a|o|ö;
@@ -27,7 +27,6 @@ define DRule        D -> t || %-VOICE "^" _ ,, D -> d || \%-VOICE "^" _ ;
 
 define VReduction	H -> 0 || [m|d] _ "^" H , s [e|a] "^" _ ,,
                     	[a|e|ı] -> 0 || m _ "^" H ; 
-
 
 ! To handle Vowel Harmony.
 
@@ -63,7 +62,7 @@ define Zclear   Z -> 0 || _ "^" [m|y] ,, Z -> z || _ "^" \[m|y] ;
 
 ! Clear out the "^" symbols.
 
-define Cleanup		"^" -> 0;
+define Cleanup	"^" -> 0;
 
 push Cleanup
 push Zclear
