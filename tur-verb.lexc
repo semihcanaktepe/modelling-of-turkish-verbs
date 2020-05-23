@@ -192,7 +192,7 @@ LEXICON PersonAor
 1personPl:^Iz      #;
 2personPl:^sInIz   #;
 3personPl:0        #;
-3personPl:^ler     #;
+3personPl:^lAr     #;
 
 LEXICON PersonPast
 
